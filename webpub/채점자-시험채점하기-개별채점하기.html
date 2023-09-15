@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./pub/style.css">
+    <script src="./pub/jquery-3.6.4.min.js"></script>
+    <script src="./pub/functions.js"></script>
+    <title>AITe</title>
+</head>
+<body>
+    <header class="common">
+        <h1>AITe</h1>
+        <nav>
+            <a href="#none" target="_self"><h2>채점자 홈</h2></a>
+            <a href="#none" target="_self">시험 채점하기</a>
+            <a href="#none" target="_self">채점 내역</a>
+            <a href="#none" target="_self">1:1문의</a>
+            <a href="#none" target="_self">내 정보</a>
+        </nav>
+        <div class="function">
+            <span class="loginName">김채점 채점자</span>
+            <button type="button" class="logout">로그아웃</button>
+        </div>
+    </header>
+    <div class="bodyWrap">
+        <aside class="common">
+            <nav>
+                <a href="#none" target="_self"><h2>&lt; 뒤로가기</h2></a>
+            </nav>
+        </aside>
+        <main>
+            <header class="page">
+                <ol class="location">
+                    <li>채점자 홈</li>
+                    <li><i></i>시험 채점하기</li>
+                    <li><i></i>개별 채점하기</li>
+                </ol>
+            </header>
+            <section class="step">
+                <header class="step">
+                    <span class="no">1단계</span>
+                    <h3>
+                        수험생 정보
+                        <p>해당 시험에 응시한 수험생 정보입니다.</p>
+                    </h3>
+                </header>
+                <table class="list box">
+                    <colgroup>
+                        <col style="width: 98px;">
+                        <col style="width: 92px;">
+                        <col style="width: 58px;">
+                        <col style="width: 170px;">
+                        <col style="width: 120px;">
+                        <col style="width: 80px;">
+                        <col style="width: 120px;">
+                        <col style="width: 110px;">
+                        <col style="width: 78px;">
+                        <col style="width: 120px;">
+                        <col style="width: 102px;">
+                        <col style="width: 130px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>시험신청기간 <sub>지역</sub></th>
+                            <th class="check">시험일 <sub class="dateCheck">성적발표일</sub></th>
+                            <th>접수구분 <sub>차수</sub></th>
+                            <th class="check">시험종복 <sub class="testGrade">시험등급</sub></th>
+                            <th>검정과목 <sub>분야/영역</sub></th>
+                            <th>시작언어 <sub>타깃언어</sub></th>
+                            <th>문제유형 <sub>세부문제 있음</sub></th>
+                            <th>대&middot;중 <sub>소분류</sub></th>
+                            <th>시작 <sub>종료</sub></th>
+                            <th>개인/그룹 <sub>그룹세부명</sub></th>
+                            <th class="check">이름(성별) <sub>생년월일</sub></th>
+                            <th class="check">이메일(ID) <sub>휴대폰번호</sub></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6/12~6/12 <sub>서울</sub></td>
+                            <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                            <td>정기 <sub>1차</sub></td>
+                            <td>AI 언어전문가 <sub class="testGrade"><i>2</i> 전문1급</sub></td>
+                            <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                            <td>한국어 <sub>영어</sub></td>
+                            <td>문서 <a href="#none" target="self" class="sub check">세부문제 있음</a></td>
+                            <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                            <td>14:00 <sub>16:00</sub></td>
+                            <td>개인 <a href="#none" target="self" class="sub check">그룹세부명 있음</a></td>
+                            <td>김희원(여) <sub>990101</sub></td>
+                            <td>user@gmail.com <sub>010-0000-0000</sub></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="infoBox questionType">
+                    <dt>문제형식</dt>
+                    <dd>
+                        <label class="doc">
+                            <input type="radio" name="questionType" checked>
+                            <dl>
+                                <dt>문서 번역</dt>
+                                <dd>.pdf, docx, pptx</dd>
+                            </dl>
+                        </label>
+                        <label class="stt">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>STT (+번역)</dt>
+                                <dd>음성을 글로</dd>
+                            </dl>
+                        </label>
+                        <label class="tts">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>TTS (+번역)</dt>
+                                <dd>글을 음성으로</dd>
+                            </dl>
+                        </label>
+                        <label class="sts">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>STS 동시통역</dt>
+                                <dd>음성을 음성으로</dd>
+                            </dl>
+                        </label>
+                        <label class="mov">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>영상 (+번역)</dt>
+                                <dd>MP4 등</dd>
+                            </dl>
+                        </label>
+                        <label class="youtube">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>유튜브 (+번역)</dt>
+                                <dd>유튜브 URL</dd>
+                            </dl>
+                        </label>
+                        <label class="prompt">
+                            <input type="radio" name="questionType" disabled>
+                            <dl>
+                                <dt>프롬프트</dt>
+                                <dd>ChatGPT</dd>
+                            </dl>
+                        </label>
+                    </dd>
+                </dl>
+                <dl class="infoBox progress">
+                    <dt>채점 진행률</dt>
+                    <dd class="num">
+                        전체 <strong>30명</strong> (합경생 <em>20명</em> (6명&middot;불합격생) / 남은 숫자 <em>4명</em>)
+                    </dd>
+                    <dd class="details">
+                        <button type="button" class="nav prev">이전</button>
+                        <ul>
+                            <li>번호26</li>
+                            <li>2022-02-08</li>
+                            <li>010-0000-0000</li>
+                            <li>atie01@gmail.com</li>
+                            <li>남</li>
+                            <li>처음 학생입니다.</li>
+                        </ul>
+                        <button type="button" class="nav next">다음</button>
+                    </dd>
+                </dl>
+            </section>
+            <section class="step">
+                <header class="step">
+                    <span class="no">2단계</span>
+                    <h3>
+                        채점하기
+                        <p>채점합니다.</p>
+                    </h3>
+                    <div class="function">
+                        <dl class="filter">
+                            <dt>항목 표시/숨기기</dt>
+                            <dd>
+                                <label class="check"><input type="checkbox" checked><i></i><span>원문</span></label>
+                                <label class="check"><input type="checkbox" checked><i></i><span>기계 번역</span></label>
+                                <label class="check"><input type="checkbox" checked><i></i><span>정답문_1</span></label>
+                                <label class="check"><input type="checkbox"><i></i><span>정답문_2</span></label>
+                                <label class="check"><input type="checkbox" checked><i></i><span>수험생답변</span></label>
+                                <label class="check"><input type="checkbox"><i></i><span>개별 채점</span></label>
+                                <label class="check"><input type="checkbox"><i></i><span>개별 피드백</span></label>
+                            </dd>
+                        </dl>
+                        <button type="button" class="fullScreen">전체창 보기</button>
+                    </div>
+                </header>
+                <section class="feedback">
+                    <dl class="overview">
+                        <dt>전체 피드백</dt>
+                        <dd><input type="text" placeholder="전체 피드백을 입력해 주세요."></dd>
+                    </dl>
+                    <select>
+                        <option>선택</option>
+                    </select>
+                    <dl class="totalScore">
+                        <dt>총 점수 입력</dt>
+                        <dd><input type="text" placeholder="점수 입력"></dd>
+                    </dl>
+                </section>
+                <div class="scoringWrap">
+                    <table class="scoring" style="width: 2278px;">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col class="point">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>원문의 문장목록</th>
+                                <th>기계 번역결과</th>
+                                <th class="standard">정답문_1 편집</th>
+                                <th class="standard">정답문_2 편집</th>
+                                <th class="answer">수험생 답변</th>
+                                <th class="feedback">개별 채점</th>
+                                <th class="feedback">개별 피드백</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="answer">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td>수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td>Lorem ipsum dolor sit amet, cet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elet, consectetur adipiscing elonsectetur adipiscing elit.</td>
+                                <td class="standard">정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다정답문이 표시됩니다</td>
+                                <td class="standard">정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.정답문을 입력해주세요.</td>
+                                <td class="answer">수험생 답변이 표시됩니다</td>
+                                <td class="feedback point"><input type="text" value="10"></td>
+                                <td class="feedback"><textarea>피드백을입력하는 영역입니다</textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <section class="feedback">
+                    <dl class="overview">
+                        <dt>전체 피드백</dt>
+                        <dd><input type="text" placeholder="전체 피드백을 입력해 주세요."></dd>
+                    </dl>
+                    <select>
+                        <option>선택</option>
+                    </select>
+                    <dl class="totalScore">
+                        <dt>총 점수 입력</dt>
+                        <dd><input type="text" placeholder="점수 입력"></dd>
+                    </dl>
+                </section>
+                <footer class="action">
+                    <button type="button" class="gray">초기화</button>
+                    <button type="button" class="gray">임시저장</button>
+                    <strong><button type="button">최종 저장</button></strong>
+                </footer>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
