@@ -47,7 +47,20 @@ button.fill { padding: 10px 20px; background: #38467e; border-radius: 5px; font-
 button.fill:hover { background: #334073; }
 
 a.ellipsis:not('.link') { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; padding: 0 10px; }
+.navy.underline { color: #38467e; text-decoration: underline; text-underline-position: under; display: inline; width: auto; height: auto; font-weight: 700; }
+.navy.underline:hover { opacity: .8; }
 
+dl.table { font-size: 14px; line-height: 1.5em; flex-wrap: wrap; }
+dl.table dt { width: 150px; float: left; font-weight: 700; padding: 9px 0; clear: both; }
+dl.table dd { overflow: hidden; padding: 9px 0; }
+dl.table dd+dt,
+dl.table dd+dt+dd { margin-top: 24px; }
+dl.table dd input[type=text],
+dl.table dd input[type=password] { height: 46px; box-sizing: border-box; width: 400px; border: 1px solid #efefef; }
+dl.table dd input[type=text]:only-child,
+dl.table dd input[type=password]:only-child { margin: -9px 0; }
+
+/* layout */
 header.common {
     display: flex; align-items: center; 
     height: 77px; background: #fff; box-shadow: 0 4px 4px rgba(0,0,0,.05); border-radius: 0 0 20px 20px; padding: 0 65px 0 80px; }
@@ -389,7 +402,7 @@ dl.infoBox.progress .details button.nav.prev:after { transform: rotate(-45deg); 
 dl.infoBox.progress .details ul { display: flex; }
 dl.infoBox.progress .details li+li:before { content: '|'; margin: 0 .4em; }
 
-section.feedback { display: flex; font-size: 18px; font-weight: 300; line-height: 27px; }
+section.feedback { display: flex; font-size: 18px; font-weight: 300; line-height: 27px; width: 1318px; }
 *+section.feedback { margin-top: 10px; }
 section.feedback dl { border-radius: 5px; overflow: hidden; background: #fff; }
 section.feedback dt,
@@ -543,6 +556,8 @@ body.member { background: #f1faff; display: flex; flex-direction: column; align-
 .memberInformation button,
 .memberInformation .action button { height: 50px; margin-top: 12px; width: 100%; border-radius: 4px; color: #fff; font-size: 14px; }
 .action.narrow button { font-weight: 400; }
+.action.narrow.left { justify-content: flex-start; }
+.action.narrow.left button:first-child { margin-left: 0; }
 .member section.login button.login { background: #38467e; }
 .member section.login button.login:hover { background: #334073; }
 .member section.login .platform { display: flex; }
@@ -657,6 +672,7 @@ section.box nav button { border: 1px solid #f6f6f6; flex: 1 1 1px; padding: 11px
 section.box nav button:hover { border-color: #38467e; }
 section.box nav *+button { margin-left: -1px; }
 section.box nav h3 button { background: #38467e; color: #fff; }
+section.box>h3:first-child { font-weight: 700; margin-bottom: 30px; font-size: 18px; }
 
 article.box.memberInformation.agree textarea { border: 1px solid #efefef; }
 .memberInformation header.title { display: flex; }
@@ -761,6 +777,23 @@ table.input.myInfo input[type=password] { width: 400px; border-color: #efefef; }
 
 button.adminDel { color: #eb5757; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-position: under; }
 
+
+/* marker */
+.marker .myInfo { display: flex; }
+.marker .myInfo .box { flex: 0 0 654px; padding: 40px; box-sizing: border-box; }
+.marker .myInfo .box+.box { margin-left: 10px; margin-top: 0; }
+.marker .myInfo header { display: flex; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid #e5e8f0; margin-bottom: 24px; }
+.marker .myInfo header h3 { font-weight: 700; font-size: 18px; color: #000; margin-bottom: 24px; flex-basis: 100%; }
+.marker .myInfo header button { flex-basis: 210px; margin-left: auto; color: 38467e; font-size: 14px; font-weight: 700; }
+.marker .myInfo .recentChangeDate { display: flex; }
+.marker .myInfo .recentChangeDate dt,
+.marker .myInfo .recentChangeDate dd { padding: 9px 0; }
+.marker .myInfo .recentChangeDate dt { flex: 0 0 200px; }
+.marker .myInfo .recentChangeDate dd { font-weight: 700; }
+.marker .myInfo .recentChangeDate dd strong { color: #fd4848; }
+.marker .memberInformation .action { margin: 30px 0; }
+.marker .memberInformation .action button { margin-top: 0; }
+
 /* popup */
 .dimm { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0,0,0,.2); display: flex; flex-direction: column; justify-content: center; align-items: center; }
 body.popupOn { overflow: hidden; }
@@ -770,7 +803,10 @@ body.popupOn { overflow: hidden; }
 .dimm .popup.alert>article p { width: 100%; font-size: 18px; color: #3f3d3d; }
 body.member .dimm .popup.alert>article p { font-size: 14px; }
 .dimm .popup.alert>footer { border-top: 1px solid #efefef; text-align: center; box-sizing: border-box; height: 60px; }
-.dimm .popup>footer button { height: 100%; width: 100%; color: #38467e; font-weight: 600; font-size: 16px; }
+.dimm .popup.alert>footer.multi { display: flex; background: #efefef; }
+.dimm .popup.alert>footer.multi button { flex: 1 1 1px; width: auto; }
+.dimm .popup.alert>footer.multi button+button { margin-left: 1px; }
+.dimm .popup>footer button { height: 100%; width: 100%; color: #38467e; font-weight: 600; font-size: 16px; background: #fff; }
 .dimm .popup>footer button:hover { background: #f7fafc; }
 
 .popup header.title { font-size: 26px; line-height: 1.5em; font-weight: 700; text-align: center; margin-bottom: 40px; }

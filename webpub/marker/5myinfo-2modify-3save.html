@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-3.6.4.min.js"></script>
+    <script src="../pub/functions.js"></script>
+    <title>AITe</title>
+</head>
+<body>
+    <header class="common">
+        <h1>AITe</h1>
+        <nav>
+            <a href="#none" target="_self"><h2>채점자 홈</h2></a>
+            <a href="#none" target="_self">시험 채점하기</a>
+            <a href="#none" target="_self">채점 내역</a>
+            <a href="#none" target="_self">1:1문의</a>
+            <a href="#none" target="_self">내 정보</a>
+        </nav>
+        <div class="function">
+            <span class="loginName">김관리 관리자</span>
+            <button type="button" class="logout">로그아웃</button>
+        </div>
+    </header>
+    <div class="bodyWrap">
+        <aside class="common">
+            <nav>
+            <a href="#none" target="_self">채점자 홈</a>
+            <a href="#none" target="_self">시험 채점하기</a>
+            <a href="#none" target="_self">채점 내역</a>
+            <a href="#none" target="_self">1:1문의</a>
+            <a href="#none" target="_self"><h2>내 정보</h2></a>
+            </nav>
+        </aside>
+        <main class="marker">
+            <header class="page">
+                <ol class="location">
+                    <li>채점자 홈</li>
+                    <li><i></i>내 정보</li>
+                    <li><i></i>회원 정보 수정</li>
+                </ol>
+            </header>
+            <article class="memberInformation box">
+                <h3>회원 정보 입력</h3>
+                <dl class="portrait">
+                    <dt>사진 등록</dt>
+                    <dd class="photo">
+                        <figure></figure>
+                    </dd>
+                    <dd>
+                        <button type="button" class="photoSelect">사진 등록/수정</button>
+                        <ul>
+                            <li>10MB 미만의 JPG, GIF, PNG만 업로드 가능합니다.</li>
+                            <li>사진을 확인해 주십시요. 시험 응시 때 이 사진으로 본인 여부를 확인합니다.</li>
+                            <li>다르 사람의 사진이거나 수험자를 확인할 수 없는 사진은 시험에 응시할 수 없습니다.</li>
+                            <li>이 사진은 자격증에 들어갈 사진입니다.</li>
+                            <li>촬영 후 6개월 미만의 사진만 사용 가능합니다.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">이메일주소</dt>
+                    <dd class="email">
+                        <input type="text">
+                        <dl>
+                            <dt>이메일 수신 여부</dt>
+                            <dd>
+                                <label class="check"><input type="checkbox"><i></i><span>수신</span></label>
+                                <label class="check"><input type="checkbox"><i></i><span>미수신</span></label>
+                            </dd>
+                        </dl>
+                    </dd>
+                    <dt class="required">그룹</dt>
+                    <dd class="group">
+                        <select>
+                            <option>개인</option>
+                        </select>
+                        <input type="text" placeholder="소속 입력">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">이름</dt>
+                    <dd class="name">
+                        <input type="text" value="김희원">
+                        <p>공백 포함 최대 40자까지 입력 가능합니다.</p>
+                    </dd>
+                    <dt class="required">성별</dt>
+                    <dd class="sex">
+                        <select>
+                            <option>남자</option>
+                            <option>여자</option>
+                        </select>
+                    </dd>
+                    <dt class="required">
+                        생년월일
+                    </dt>
+                    <dd class="birthday">
+                        <select>
+                            <option>1990-02-02</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">휴대폰번호</dt>
+                    <dd class="mobile">
+                        <select>
+                            <option>+82</option>
+                        </select>
+                        <input type="text" value="010-0000-0000">
+                    </dd>
+                    <dt>일반번호 (선택)</dt>
+                    <dd class="tel">
+                        <select>
+                            <option>+82</option>
+                        </select>
+                        <input type="text" value="010-0000-0000">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">주소</dt>
+                    <dd class="address">
+                        <input type="text" class="postNo" value="-">
+                        <button type="button">우편번호 검색</button>
+                        <input type="text" value="-" class="detail">
+                    </dd>
+                </dl>
+                <footer class="action narrow left">
+                    <strong><button type="button">수정하기</button></strong>
+                    <button type="button">취소</button>
+                </footer>
+                <button type="button" class="navy underline">회원 탈퇴하기</button>
+            </article>
+        </main>
+    </div>
+    <div class="dimm">
+        <section class="popup alert">
+            <article>
+                <p>회원 정보 수정이 완료되었습니다.</p>
+            </article>
+            <footer>
+                <button type="button">확인</button>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
