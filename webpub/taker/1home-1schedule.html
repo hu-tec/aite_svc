@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-3.6.4.min.js"></script>
+    <script src="../pub/functions.js"></script>
+    <title>AITe</title>
+</head>
+<body class="taker popupOn">
+    <header class="common">
+        <h1>AITe</h1>
+        <nav>
+            <a href="#none" target="_self"><h2>수험생 홈</h2></a>
+            <a href="#none" target="_self">시험접수</a>
+            <a href="#none" target="_self">시험응시</a>
+            <a href="#none" target="_self">시험결과</a>
+            <a href="#none" target="_self">자격증신청</a>
+            <a href="#none" target="_self">1:1 문의</a>
+            <a href="#none" target="_self">내 정보</a>
+        </nav>
+        <div class="function">
+            <span class="loginName">김회원 수험생</span>
+            <button type="button" class="logout">로그아웃</button>
+        </div>
+    </header>
+    <div class="bodyWrap">
+        <aside class="common">
+            <nav>
+                <a href="#none" target="_self"><h2>수험생 홈</h2></a>
+                <a href="#none" target="_self">시험접수</a>
+                <a href="#none" target="_self">시험응시</a>
+                <a href="#none" target="_self">시험결과</a>
+                <a href="#none" target="_self">자격증신청</a>
+                <a href="#none" target="_self">1:1 문의</a>
+                <a href="#none" target="_self">내 정보</a>
+            </nav>
+        </aside>
+        <main>
+            <header class="page">
+                <ol class="location">
+                    <li>수험생 홈</li>
+                    <li><i></i>시험접수</li>
+                </ol>
+            </header>
+            <section class="list">
+                <div class="listWrap">
+                    <table class="list" style="width: 2628px;">
+                        <colgroup>
+                            <col class="check">
+                            <col class="no">
+                            <col class="zoom">
+                            <col class="period-location">
+                            <col class="testDate-resultDate">
+                            <col class="appType-order">
+                            <col class="testItem-grade">
+                            <col class="subject-field">
+                            <col class="languages">
+                            <col class="questionType">
+                            <col class="categories">
+                            <col class="start-end">
+                            <col class="appState">
+                            <col class="testResultDate">
+                            <col class="passYN">
+                            <col class="certificate-button">
+                            <col class="payment-addition">
+                            <col class="paymentDate-date">
+                            <col class="paymentAmount">
+                            <col class="paymentMethod">
+                            <col class="paymentTotalAmount">
+                            <col class="refund-refundMethod">
+                            <col class="refundAccount">
+                            <col class="minDate">
+                            <col class="refuntAmount">
+                            <col class="modify">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><label class="check"><input type="checkbox"><i></i></label></th>
+                                <th><button type="button" class="sort">NO</button></th>
+                                <th>돋보기</th>
+                                <th>
+                                    <button type="button" class="sort">시험기간</button>
+                                    <button type="button" class="sub sort">지역</button>
+                                </th>
+                                <th class="check">
+                                    <button type="button" class="sort">시험일 <i></i></button>
+                                    <button type="button" class="sub sort">성적발표일</button>
+                                </th>
+                                <th>접수구분 <sub>차수</sub></th>
+                                <th class="check"><i></i>시험종목 <sub class="testGrade"><i></i>시험등급</sub></th>
+                                <th>검정과목 <sub>분야/영역</sub></th>
+                                <th>시작언어 <sub>타깃언어</sub></th>
+                                <th><button type="button" class="sort">문제유형</button> <sub>세부문제 있음</sub></th>
+                                <th><button type="button" class="sort">대&middot;중</button> <sub>소분류</sub></th>
+                                <th>시작 <sub>종료</sub></th>
+                                <th><button type="button" class="sort">응시상태</button> <sub>응시일</sub></th>
+                                <th><button type="button" class="sort">성적처리날짜</button></th>
+                                <th class="check"><button type="button" class="sort"><i></i>합격여부</button></th>
+                                <th class="check"><i></i>자격증신청</th>
+                                <th>결제내역 <sub>추가</sub></th>
+                                <th>
+                                    <button type="button" class="sort">결제일시</button>
+                                    <button type="button" class="sub sort">환불일시</button>
+                                </th>
+                                <th>결제금액 <sub>환불금액</sub></th>
+                                <th>결제방법 <sub>결제상태</sub></th>
+                                <th>총금액 <sub>할인금액</sub></th>
+                                <th>환불 <sub>환불수단</sub></th>
+                                <th>환불 예금주(은행명) <sub>계좌번호</sub></th>
+                                <th>시험연기일</th>
+                                <th>환불금액</th>
+                                <th>수정/삭제</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label class="check"><input type="checkbox" checked><i></i></label></td>
+                                <td>1</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>2</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>3</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>4</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>5</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>6</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="#none" target="_self" class="line">신청하기</a></td>
+                                <td>시험 <sub>자격증</sub></td>
+                                <td>22-06-25 (일) <sub class="date">22-06-26 (일)</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>카드 <sub>승인</sub></td>
+                                <td>128,000 <sub>20,000</sub></td>
+                                <td>환불요청 <sub class="blur">수단 없음</sub></td>
+                                <td>김회원(신한) <sub>110-0000-00000</sub></td>
+                                <td>22.5.12</td>
+                                <td>130,000</td>
+                                <td>
+                                    <a href="#none" target="_self" class="modify">수정</a>
+                                    <a href="#none" target="_self" class="modify red">취소</a>
+                                    <a href="#none" target="_self" class="modify red blur">삭제</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <footer class="list">
+                    <nav>
+                        <button type="button" class="first">첫 페이지로</button>
+                        <button type="button" class="prev">이전 페이지로</button>
+                        <ol>
+                            <li><button type="button" class="on">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            <li><button type="button">6</button></li>
+                            <li><button type="button">7</button></li>
+                            <li><button type="button">8</button></li>
+                            <li><button type="button">9</button></li>
+                            <li><button type="button">10</button></li>
+                        </ol>
+                        <button type="button" class="next">다음 페이지로</button>
+                        <button type="button" class="last">마지막 페이지로</button>
+                    </nav>
+                    <div class="function">
+                        <select class="pageItemNum">
+                            <option>30개씩 보기</option>
+                            <option>50개 보기</option>
+                            <option>100개 보기</option>
+                            <option>전체 보기</option>
+                        </select>
+                    </div>
+                </footer>
+            </section>
+        </main>
+    </div>
+    <div class="dimm">
+        <section class="popup testSchedule">
+            <header class="title">
+                <h2>시험 일정 변경</h2>
+                <p>시험 일정을 변경하시겠습니까?</p>
+                <button type="button" class="close">닫기</button>
+            </header>
+            <article>
+                <div class="listWrap" style="max-height: 567px;">
+                    <table class="list">
+                        <colgroup>
+                            <col class="check">
+                            <col class="no">
+                            <col class="zoom">
+                            <col class="period-location">
+                            <col class="testDate-resultDate">
+                            <col class="appType-order">
+                            <col class="testItem-grade">
+                            <col class="subject-field">
+                            <col class="languages">
+                            <col class="questionType">
+                            <col class="categories">
+                            <col class="start-end">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><label class="check"><input type="checkbox"><i></i></label></th>
+                                <th><button type="button" class="sort">NO</button></th>
+                                <th>돋보기</th>
+                                <th>
+                                    <button type="button" class="sort">시험기간</button>
+                                    <button type="button" class="sub sort">지역</button>
+                                </th>
+                                <th class="check">
+                                    <button type="button" class="sort">시험일 <i></i></button>
+                                    <button type="button" class="sub sort">성적발표일</button>
+                                </th>
+                                <th>접수구분 <sub>차수</sub></th>
+                                <th class="check"><i></i>시험종목 <sub class="testGrade"><i></i>시험등급</sub></th>
+                                <th>검정과목 <sub>분야/영역</sub></th>
+                                <th>시작언어 <sub>타깃언어</sub></th>
+                                <th><button type="button" class="sort">문제유형</button> <sub>세부문제 있음</sub></th>
+                                <th><button type="button" class="sort">대&middot;중</button> <sub>소분류</sub></th>
+                                <th>시작 <sub>종료</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label class="check"><input type="checkbox" checked><i></i></label></td>
+                                <td>1</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>2</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>3</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>4</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>5</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>6</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <footer class="action">
+                <strong class="red"><button type="button">변경하기</button></strong>
+                <button type="button">돌아가기</button>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

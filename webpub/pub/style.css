@@ -673,6 +673,7 @@ section.box nav button:hover { border-color: #38467e; }
 section.box nav *+button { margin-left: -1px; }
 section.box nav h3 button { background: #38467e; color: #fff; }
 section.box>h3:first-child { font-weight: 700; margin-bottom: 30px; font-size: 18px; }
+section.box footer.list nav button { flex: 0 0 auto; padding: 0; }
 
 article.box.memberInformation.agree textarea { border: 1px solid #efefef; }
 .memberInformation header.title { display: flex; }
@@ -794,6 +795,10 @@ button.adminDel { color: #eb5757; font-size: 14px; font-weight: 700; text-decora
 .marker .memberInformation .action { margin: 30px 0; }
 .marker .memberInformation .action button { margin-top: 0; }
 
+/* taker */
+body.taker { background: #f1faff; }
+body.taker aside.common a h2 { background: #0095a1; color: #fff; font-weight: 400; }
+
 /* popup */
 .dimm { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0,0,0,.2); display: flex; flex-direction: column; justify-content: center; align-items: center; }
 body.popupOn { overflow: hidden; }
@@ -810,12 +815,15 @@ body.member .dimm .popup.alert>article p { font-size: 14px; }
 .dimm .popup>footer button:hover { background: #f7fafc; }
 
 .popup header.title { font-size: 26px; line-height: 1.5em; font-weight: 700; text-align: center; margin-bottom: 40px; }
+.popup header.title p { font-size: 18px; font-weight: 400; line-height: 1.5em; }
 .popup footer.action { width: 100%; }
 .popup footer.action button { font-weight: 400; flex: 0 0 210px; background: #b1b1b1; border-color: #b1b1b1b1; height: 46px; font-size: 18px; color: #fff; border-radius: 5px; }
 .popup footer.action button:hover { background: #aaa; border-color: #aaa; }
 .popup footer.action strong { display: contents; }
 .popup footer.action strong button { background: #109ca6; border-color: #109ca6; }
 .popup footer.action strong button:hover { background: #0f919b; border-color: #0f919b; }
+.popup footer.action strong.red button { background: #eb5757; border-color: #eb5757; }
+.popup footer.action strong.red button:hover { background: #e05252; border-color: #e05252; }
 
 .popup.adminDel,
 .popup.newPopup { padding: 60px 40px 40px; background: #fff; border-radius: 10px; box-sizing: border-box; width: 716px; position: relative; }
@@ -832,3 +840,7 @@ body.member .dimm .popup.alert>article p { font-size: 14px; }
 .popup.newPopup footer.action { margin-top: 0; }
 .popup.adminDel { width: 653px; padding-top: 20px; padding-bottom: 20px; }
 .popup.adminDel header.title { margin-bottom: 20px; }
+
+.popup .listWrap { overflow: auto; margin-bottom: 36px; }
+
+.popup.testSchedule { padding: 53px 76px; background: #fff; border-radius: 10px; position: relative; }
