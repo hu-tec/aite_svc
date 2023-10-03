@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-3.6.4.min.js"></script>
+    <script src="../pub/functions.js"></script>
+    <title>AITe</title>
+</head>
+<body class="taker">
+    <header class="common">
+        <h1>AITe</h1>
+        <nav>
+            <a href="./1home.html" target="_self"><h2>수험생 홈</h2></a>
+            <a href="./2app.html" target="_self">시험접수</a>
+            <a href="./3take.html" target="_self">시험응시</a>
+            <a href="./4result.html" target="_self">시험결과</a>
+            <a href="./5certificate.html" target="_self">자격증신청</a>
+            <a href="./6inquery-1write.html" target="_self">1:1 문의</a>
+            <a href="./7myinfo-1overview.html" target="_self">내 정보</a>
+        </nav>
+        <div class="function">
+            <span class="loginName">김회원 수험생</span>
+            <button type="button" class="logout">로그아웃</button>
+        </div>
+    </header>
+    <div class="bodyWrap">
+        <aside class="common">
+            <nav>
+                <a href="./1home.html" target="_self">수험생 홈</a>
+                <a href="./2app.html" target="_self">시험접수</a>
+                <a href="./3take.html" target="_self">시험응시</a>
+                <a href="./4result.html" target="_self">시험결과</a>
+                <a href="./5certificate.html" target="_self"><h2>자격증신청</h2></a>
+                <a href="./6inquery-1write.html" target="_self">1:1 문의</a>
+                <a href="./7myinfo-1overview.html" target="_self">내 정보</a>
+            </nav>
+        </aside>
+        <main class="takerCertificate">
+            <header class="page">
+                <ol class="location">
+                    <li>수험생 홈</li>
+                    <li><i></i>자격증 신청</li>
+                </ol>
+            </header>
+            <section class="list">
+                <h3>자격증 신청 가능한 시험 선택</h3>
+                <div class="listWrap">
+                    <table class="list" style="width: 1578px;">
+                        <colgroup>
+                            <col class="check">
+                            <col class="no">
+                            <col class="zoom">
+                            <col class="period-location">
+                            <col class="testDate-resultDate">
+                            <col class="appType-order">
+                            <col class="testItem-grade">
+                            <col class="subject-field">
+                            <col class="languages">
+                            <col class="questionType">
+                            <col class="categories">
+                            <col class="start-end">
+                            <col class="appState">
+                            <col class="testResultDate">
+                            <col class="passYN">
+                            <col class="certificate-button">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><label class="check"><input type="checkbox"><i></i></label></th>
+                                <th><button type="button" class="sort">NO</button></th>
+                                <th>돋보기</th>
+                                <th>
+                                    <button type="button" class="sort">시험기간</button>
+                                    <button type="button" class="sub sort">지역</button>
+                                </th>
+                                <th class="check">
+                                    <button type="button" class="sort">시험일 <i></i></button>
+                                    <button type="button" class="sub sort">성적발표일</button>
+                                </th>
+                                <th>접수구분 <sub>차수</sub></th>
+                                <th class="check"><i></i>시험종목 <sub class="testGrade"><i></i>시험등급</sub></th>
+                                <th>검정과목 <sub>분야/영역</sub></th>
+                                <th>시작언어 <sub>타깃언어</sub></th>
+                                <th><button type="button" class="sort">문제유형</button> <sub>세부문제 있음</sub></th>
+                                <th><button type="button" class="sort">대&middot;중</button> <sub>소분류</sub></th>
+                                <th>시작 <sub>종료</sub></th>
+                                <th><button type="button" class="sort">응시상태</button> <sub>응시일</sub></th>
+                                <th><button type="button" class="sort">성적처리날짜</button></th>
+                                <th class="check"><button type="button" class="sort"><i></i>합격여부</button></th>
+                                <th class="check"><i></i>자격증신청</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label class="check"><input type="checkbox" checked><i></i></label></td>
+                                <td>1</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>2</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>3</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>4</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>5</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                            <tr>
+                                <td><label class="check"><input type="checkbox"><i></i></label></td>
+                                <td>6</td>
+                                <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                                <td>6/12~6/12 <sub>서울</sub></td>
+                                <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                                <td>정기 <sub>1차</sub></td>
+                                <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                                <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                                <td>한국어 <sub>영어</sub></td>
+                                <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                                <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                                <td>14:00 <sub>16:00</sub></td>
+                                <td><a href="#none" target="_self" class="line">접수하기</a> <sub>23-11-01</sub></td>
+                                <td><sub class="date">20-06-29 (일) 14:00</sub> <a href="#none" target="_self" class="line">변경하기</a></td>
+                                <td><span class="state">PASS</span></td>
+                                <td><span class="state yellow">미신청</span> <a href="./3test-4certificate-1print.html" target="_self" class="line">신청하기</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <footer class="list">
+                    <nav>
+                        <button type="button" class="first">첫 페이지로</button>
+                        <button type="button" class="prev">이전 페이지로</button>
+                        <ol>
+                            <li><button type="button" class="on">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            <li><button type="button">6</button></li>
+                            <li><button type="button">7</button></li>
+                            <li><button type="button">8</button></li>
+                            <li><button type="button">9</button></li>
+                            <li><button type="button">10</button></li>
+                        </ol>
+                        <button type="button" class="next">다음 페이지로</button>
+                        <button type="button" class="last">마지막 페이지로</button>
+                    </nav>
+                    <div class="function">
+                        <select class="pageItemNum">
+                            <option>30개씩 보기</option>
+                            <option>50개 보기</option>
+                            <option>100개 보기</option>
+                            <option>전체 보기</option>
+                        </select>
+                    </div>
+                </footer>
+                <footer class="action narrow">
+                    <strong><button type="button">자격증 신청하기</button></strong>
+                </footer>
+            </section>
+            <article class="memberInformation box">
+                <h3>기본 정보 확인</h3>
+                <dl class="portrait">
+                    <dt>사진 등록</dt>
+                    <dd class="photo">
+                        <figure></figure>
+                    </dd>
+                    <dd>
+                        <button type="button" class="photoSelect">사진 등록/수정</button>
+                        <ul>
+                            <li>10MB 미만의 JPG, GIF, PNG만 업로드 가능합니다.</li>
+                            <li>사진을 확인해 주십시요. 시험 응시 때 이 사진으로 본인 여부를 확인합니다.</li>
+                            <li>다르 사람의 사진이거나 수험자를 확인할 수 없는 사진은 시험에 응시할 수 없습니다.</li>
+                            <li>이 사진은 자격증에 들어갈 사진입니다.</li>
+                            <li>촬영 후 6개월 미만의 사진만 사용 가능합니다.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">이메일주소</dt>
+                    <dd class="email">
+                        <input type="text" value="user@gmail.com">
+                        <p>공백 포함 최대 40자까지 입력 가능합니다.</p>
+                    </dd>
+                    <dt class="required">휴대폰번호</dt>
+                    <dd class="mobile">
+                        <select>
+                            <option>+82</option>
+                        </select>
+                        <input type="text" value="010-0000-0000">
+                    </dd>
+                    <dt>일반번호 (선택)</dt>
+                    <dd class="tel">
+                        <select>
+                            <option>+82</option>
+                        </select>
+                        <input type="text" value="010-0000-0000">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">이름</dt>
+                    <dd class="name">
+                        <input type="text" value="김희원">
+                        <p>공백 포함 최대 40자까지 입력 가능합니다.</p>
+                    </dd>
+                    <dt class="required narrow">성별</dt>
+                    <dd class="sex">
+                        <select>
+                            <option>남자</option>
+                            <option>여자</option>
+                        </select>
+                    </dd>
+                    <dt class="required">
+                        생년월일
+                    </dt>
+                    <dd class="birthday">
+                        <select>
+                            <option>1990-02-02</option>
+                        </select>
+                    </dd>
+                    <dt class="required narrow">그룹</dt>
+                    <dd class="tel">
+                        <select>
+                            <option>개인</option>
+                        </select>
+                        <input type="text" placeholder="소속입력">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="required">주소</dt>
+                    <dd class="address">
+                        <input type="text" class="postNo" value="-">
+                        <button type="button">우편번호 검색</button>
+                        <input type="text" value="-" class="detail">
+                    </dd>
+                </dl>
+            </article>
+            <article class="memberInformation box">
+                <h3>응시 정보 확인</h3>
+                <article class="certificateChoice">
+                    <dl>
+                        <dt>시험 선택</dt>
+                        <dd>
+                            <select>
+                                <option>서울특별시 [특별] 2022.05.00 (일) 09:00</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>지역 선택</dt>
+                        <dd>
+                            <select>
+                                <option>지역 선택</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>응시료</dt>
+                        <dd><input type="text" readonly value="999,000"></dd>
+                    </dl>
+                    <dl>
+                        <dt class="narrow">총 합계금액</dt>
+                        <dd><input type="text" readonly value="999,000"></dd>
+                        <dt class="narrow">총 결제예정 금액</dt>
+                        <dd><input type="text" readonly value="999,000"></dd>
+                    </dl>
+                    <dl>
+                        <dt class="narrow">결제방법</dt>
+                        <dd class="radio">
+                            <label class="radio"><input type="radio" name="paymentMethod"><i></i><span>카드결제</span></label>
+                            <label class="radio"><input type="radio" name="paymentMethod" checked><i></i><span>계좌이체</span></label>
+                            <label class="radio"><input type="radio" name="paymentMethod"><i></i><span>포인트결제</span></label>
+                            <label class="radio"><input type="radio" name="paymentMethod"><i></i><span>카카오페이</span></label>
+                            <label class="radio"><input type="radio" name="paymentMethod"><i></i><span>네이버페이</span></label>
+                        </dd>
+                    </dl>
+                </article>
+            </article>
+            <article class="certificateChoice box">
+                <h3>자격증 선택</h3>
+                <table>
+                    <colgroup>
+                        <col style="width: 100px;">
+                        <col style="width: 320px;">
+                        <col style="width: 275px;">
+                        <col style="width: 112px;">
+                        <col style="width: 277px;">
+                        <col style="width: 234px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><label class="check line"><input type="checkbox"><i></i></label></th>
+                            <th>종류</th>
+                            <th>방식</th>
+                            <th>미리보기</th>
+                            <th>출력하기</th>
+                            <th>진행하기</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label class="check line"><input type="checkbox" checked><i></i></label></td>
+                            <td>
+                                <dl>
+                                    <dt>카드형</dt>
+                                    <dd>인쇄 : 1000/ 배송: 출력 3000+ 배송비 별도</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <label class="radio green"><input type="radio" name="printMethod1" checked><i></i><span>인쇄</span></label>
+                                <label class="radio green"><input type="radio" name="printMethod1"><i></i><span>배송</span></label>
+                            </td>
+                            <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                            <td class="amount">
+                                <button type="button" class="action" onclick="location.href='5certificate-2preview-2certificate.html';">출력하기</button>
+                                <button type="button" class="adj" disabled>-</button>
+                                <input type="text" class="amount" value="1">
+                                <button type="button" class="adj">+</button>
+                            </td>
+                            <td>발급완료</td>
+                        </tr>
+                        <tr>
+                            <td><label class="check line"><input type="checkbox"><i></i></label></td>
+                            <td>
+                                <dl>
+                                    <dt>자격증(상징형)</dt>
+                                    <dd>인쇄 : 1000/ 배송: 출력 3000+ 배송비 별도</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <label class="radio green"><input type="radio" name="printMethod2" checked><i></i><span>인쇄</span></label>
+                                <label class="radio green"><input type="radio" name="printMethod2"><i></i><span>배송</span></label>
+                            </td>
+                            <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                            <td class="amount">
+                                <button type="button" class="action" onclick="location.href='5certificate-2preview-2certificate.html';">출력하기</button>
+                                <button type="button" class="adj">-</button>
+                                <input type="text" class="amount" value="10">
+                                <button type="button" class="adj" disabled>+</button>
+                            </td>
+                            <td>입금대기</td>
+                        </tr>
+                        <tr>
+                            <td><label class="check line"><input type="checkbox"><i></i></label></td>
+                            <td>
+                                <dl>
+                                    <dt>확인서</dt>
+                                    <dd>인쇄 : 1000/ 배송: 출력 3000+ 배송비 별도</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <label class="radio green"><input type="radio" name="printMethod3" checked><i></i><span>인쇄</span></label>
+                                <label class="radio green"><input type="radio" name="printMethod3"><i></i><span>배송</span></label>
+                            </td>
+                            <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                            <td class="amount">
+                                <button type="button" class="action" onclick="location.href='5certificate-2preview-2certificate.html';">출력하기</button>
+                                <button type="button" class="adj" disabled>-</button>
+                                <input type="text" class="amount" value="1">
+                                <button type="button" class="adj">+</button>
+                            </td>
+                            <td>입금완료<br>취소</td>
+                        </tr>
+                        <tr>
+                            <td><label class="check line"><input type="checkbox"><i></i></label></td>
+                            <td>
+                                <dl>
+                                    <dt>원본대조필</dt>
+                                    <dd>인쇄 : 1000/ 배송: 출력 3000+ 배송비 별도</dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <label class="radio green"><input type="radio" name="printMethod4" checked><i></i><span>인쇄</span></label>
+                                <label class="radio green"><input type="radio" name="printMethod4"><i></i><span>배송</span></label>
+                            </td>
+                            <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                            <td class="amount">
+                                <button type="button" class="action" onclick="location.href='5certificate-2preview-2certificate.html';">출력하기</button>
+                                <button type="button" class="adj" disabled>-</button>
+                                <input type="text" class="amount" value="1">
+                                <button type="button" class="adj">+</button>
+                            </td>
+                            <td>입금완료<br>취소</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <footer class="memberInformation action narrow">
+                <button type="button">취소</button>
+                <strong><button type="button" onclick="location.href='5certificate-1complete.html';">결제하기</button></strong>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

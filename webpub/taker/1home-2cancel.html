@@ -10,17 +10,17 @@
     <script src="../pub/functions.js"></script>
     <title>AITe</title>
 </head>
-<body class="taker">
+<body class="taker popupOn">
     <header class="common">
         <h1>AITe</h1>
         <nav>
-            <a href="./1home.html" target="_self"><h2>수험생 홈</h2></a>
-            <a href="./2app.html" target="_self">시험접수</a>
-            <a href="./3take.html" target="_self">시험응시</a>
-            <a href="./4result.html" target="_self">시험결과</a>
-            <a href="./5certificate.html" target="_self">자격증신청</a>
-            <a href="./6inquery-1write.html" target="_self">1:1 문의</a>
-            <a href="./7myinfo-1overview.html" target="_self">내 정보</a>
+            <a href="#none" target="_self"><h2>수험생 홈</h2></a>
+            <a href="#none" target="_self">시험접수</a>
+            <a href="#none" target="_self">시험응시</a>
+            <a href="#none" target="_self">시험결과</a>
+            <a href="#none" target="_self">자격증신청</a>
+            <a href="#none" target="_self">1:1 문의</a>
+            <a href="#none" target="_self">내 정보</a>
         </nav>
         <div class="function">
             <span class="loginName">김회원 수험생</span>
@@ -30,13 +30,13 @@
     <div class="bodyWrap">
         <aside class="common">
             <nav>
-                <a href="./1home.html" target="_self"><h2>수험생 홈</h2></a>
-                <a href="./2app.html" target="_self">시험접수</a>
-                <a href="./3take.html" target="_self">시험응시</a>
-                <a href="./4result.html" target="_self">시험결과</a>
-                <a href="./5certificate.html" target="_self">자격증신청</a>
-                <a href="./6inquery-1write.html" target="_self">1:1 문의</a>
-                <a href="./7myinfo-1overview.html" target="_self">내 정보</a>
+                <a href="#none" target="_self"><h2>수험생 홈</h2></a>
+                <a href="#none" target="_self">시험접수</a>
+                <a href="#none" target="_self">시험응시</a>
+                <a href="#none" target="_self">시험결과</a>
+                <a href="#none" target="_self">자격증신청</a>
+                <a href="#none" target="_self">1:1 문의</a>
+                <a href="#none" target="_self">내 정보</a>
             </nav>
         </aside>
         <main>
@@ -342,6 +342,81 @@
                 </footer>
             </section>
         </main>
+    </div>
+    <div class="dimm">
+        <section class="popup whiteBox testCancel">
+            <header class="title">
+                <h2>시험 취소 및 환불</h2>
+                <p class="desc">환불은 진행하신 결제 방법으로 신청가능하며<br>영업일로부터 2주이상 소요 될 수 있습니다. </p>
+                <button type="button" class="close">닫기</button>
+            </header>
+            <article>
+                <dl class="table">
+                    <dt>시험 선택</dt>
+                    <dd>
+                        <select>
+                            <option>서울특별시 [특별] 2022.05.00 (일) 09:00</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl class="table">
+                    <dt>지역 선택</dt>
+                    <dd>
+                        <select>
+                            <option>서울</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl class="table price">
+                    <dt>응시료</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                    <dt>합계금액</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                    <dt>총 결제예정 금액</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                </dl>
+                <dl class="table method">
+                    <dt>결제방법</dt>
+                    <dd>
+                        <label><input type="radio"><i></i> 카드결제</label>
+                        <label><input type="radio"><i></i> 계좌이체</label>
+                        <label><input type="radio"><i></i> 포인트결제</label>
+                        <label><input type="radio"><i></i> 카카오페이</label>
+                        <label><input type="radio"><i></i> 네이버페이</label>
+                    </dd>
+                </dl>
+                <dl class="table bank">
+                    <dt>예금주</dt>
+                    <dd>
+                        <input type="text" class="name" placeholder="입력하기">
+                    </dd>
+                    <dt>은행명</dt>
+                    <dd>
+                        <input type="text" placeholder="입력하기">
+                    </dd>
+                    <dt>계좌번호</dt>
+                    <dd>
+                        <input type="text" placeholder="계좌 입력하기">
+                    </dd>
+                </dl>
+                <dl class="table memo">
+                    <dt>환불 이유/요청사항</dt>
+                    <dd>
+                        <input type="text" placeholder="내용 입력하기">
+                    </dd>
+                </dl>
+            </article>
+            <footer class="action">
+                <strong class="red"><button type="button">취소하기</button></strong>
+                <button type="button">닫기</button>
+            </footer>
+        </section>
     </div>
 </body>
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-3.6.4.min.js"></script>
+    <script src="../pub/functions.js"></script>
+    <title>AITe</title>
+</head>
+<body class="taker">
+    <header class="common">
+        <h1>AITe</h1>
+        <nav>
+            <a href="./1home.html" target="_self"><h2>수험생 홈</h2></a>
+            <a href="./2app.html" target="_self">시험접수</a>
+            <a href="./3take.html" target="_self">시험응시</a>
+            <a href="./4result.html" target="_self">시험결과</a>
+            <a href="./5certificate.html" target="_self">자격증신청</a>
+            <a href="./6inquery-1write.html" target="_self">1:1 문의</a>
+            <a href="./7myinfo-1overview.html" target="_self">내 정보</a>
+        </nav>
+        <div class="function">
+            <span class="loginName">김회원 수험생</span>
+            <button type="button" class="logout">로그아웃</button>
+        </div>
+    </header>
+    <div class="bodyWrap">
+        <aside class="common">
+            <nav>
+                <a href="./1home.html" target="_self"><h2>&lt; 뒤로가기</h2></a>
+            </nav>
+        </aside>
+        <main class="testAppPayment">
+            <header class="page">
+                <ol class="location">
+                    <li>수험생 홈</li>
+                    <li><i></i>시험접수</li>
+                </ol>
+            </header>
+            <table class="list" style="width: 1318px;">
+                <colgroup>
+                    <col class="zoom">
+                    <col class="period-location">
+                    <col class="testDate-resultDate">
+                    <col class="appType-order">
+                    <col class="testItem-grade">
+                    <col class="subject-field">
+                    <col class="languages">
+                    <col class="questionType">
+                    <col class="categories">
+                    <col class="start-end">
+                    <col class="passYN">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>돋보기</th>
+                        <th>
+                            <button type="button" class="sort">시험기간</button>
+                            <button type="button" class="sub sort">지역</button>
+                        </th>
+                        <th class="check">
+                            <button type="button" class="sort">시험일 <i></i></button>
+                            <button type="button" class="sub sort">성적발표일</button>
+                        </th>
+                        <th>접수구분 <sub>차수</sub></th>
+                        <th class="check"><i></i>시험종목 <sub class="testGrade"><i></i>시험등급</sub></th>
+                        <th>검정과목 <sub>분야/영역</sub></th>
+                        <th>시작언어 <sub>타깃언어</sub></th>
+                        <th><button type="button" class="sort">문제유형</button> <sub>세부문제 있음</sub></th>
+                        <th><button type="button" class="sort">대&middot;중</button> <sub>소분류</sub></th>
+                        <th>시작 <sub>종료</sub></th>
+                        <th class="check"><button type="button" class="sort"><i></i>합격여부</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#none" target="_self" class="zoom">자세히 보기</a></td>
+                        <td>6/12~6/12 <sub>서울</sub></td>
+                        <td>22-06-25 <sub class="date dateCheck">06-25</sub></td>
+                        <td>정기 <sub>1차</sub></td>
+                        <td>AI 언어전문가 <sub class="testGrade no2"><i>2</i> 일반2등급</sub></td>
+                        <td>인공지능 서비스 <sub>???????/ ????</sub></td>
+                        <td>한국어 <sub>영어</sub></td>
+                        <td>문서 <a href="#none" target="_self" class="sub check">세부문제 있음</a></td>
+                        <td>재무&middot;회계 <sub>소분류가 길 경우</sub></td>
+                        <td>14:00 <sub>16:00</sub></td>
+                        <td><span class="state">PASS</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="box">
+                <dl class="table select">
+                    <dt>시험 선택</dt>
+                    <dd>
+                        <select>
+                            <option>서울특별시 [특별] 2022.05.00 (일) 09:00</option>
+                        </select>
+                    </dd>
+                    <dt>지역 선택</dt>
+                    <dd>
+                        <select>
+                            <option>서울</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl class="table price">
+                    <dt>응시료</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                    <dt>총 합계금액</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                    <dt>총 결제예정 금액</dt>
+                    <dd>
+                        <input type="text" readonly value="999,000">
+                    </dd>
+                </dl>
+                <dl class="table method">
+                    <dt>결제방법</dt>
+                    <dd>
+                        <label><input type="radio"><i></i> 카드결제</label>
+                        <label><input type="radio"><i></i> 계좌이체</label>
+                        <label><input type="radio"><i></i> 포인트결제</label>
+                        <label><input type="radio"><i></i> 카카오페이</label>
+                        <label><input type="radio"><i></i> 네이버페이</label>
+                    </dd>
+                </dl>
+            </section>
+            <section class="memberInformation agree box">
+                <header>
+                    <h4>전체 동의</h4>
+                    <label class="radio"><input type="radio" name="allAgree"><i></i><span>전체 동의함</span></label>
+                    <label class="radio"><input type="radio" name="allAgree" checked><i></i><span>전체 미동의</span></label>
+                </header>
+                <article>
+                    <header>
+                        <h5>약관 1 동의</h5>
+                        <label class="radio"><input type="radio" name="agree1"><i></i><span>동의함</span></label>
+                        <label class="radio"><input type="radio" name="agree1" checked><i></i><span>동의하지 않음</span></label>
+                    </header>
+                    <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tortor vehicula, pharetra ligula aliquam, molestie neque. Sed turpis tellus, maximus eu diam vitae, pellentesque mattis erat. Nullam sed massa et ipsum volutpat malesuada. Maecenas a facilisis erat, quis consequat purus. Aliquam rhoncus eros eu metus tincidunt lobortis. Curabitur lobortis, erat in pharetra euismod, odio ex mattis metus, hendrerit ornare libero nisi ac odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras a dolor eros. Nunc at condimentum metus. Etiam ac pulvinar libero. Ut in odio at mi egestas convallis. Quisque eu augue id dolor malesuada aliquet. Nam condimentum luctus metus sed sodales. Nulla quis velit quam. Mauris non leo a lorem eleifend aliquam. Aliquam vitae massa sed neque tristique semper non at turpis. Integer efficitur eget massa in varius. Aliquam pretium viverra ante in euismod. Aenean vestibulum pretium lectus, eget rhoncus tortor varius eget. Fusce at semper justo, vel vehicula urna. Pellentesque tristique porta felis et vulputate. Phasellus porta luctus eros, at aliquet elit condimentum non. Ut aliquet ligula ac metus aliquet, nec gravida justo iaculis. Mauris nisl nunc, lobortis id sagittis quis, ornare in lectus.</textarea>
+                </article>
+                <article>
+                    <header>
+                        <h5>약관 2 동의</h5>
+                        <label class="radio"><input type="radio" name="agree2"><i></i><span>동의함</span></label>
+                        <label class="radio"><input type="radio" name="agree2" checked><i></i><span>동의하지 않음</span></label>
+                    </header>
+                    <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tortor vehicula, pharetra ligula aliquam, molestie neque. Sed turpis tellus, maximus eu diam vitae, pellentesque mattis erat. Nullam sed massa et ipsum volutpat malesuada. Maecenas a facilisis erat, quis consequat purus. Aliquam rhoncus eros eu metus tincidunt lobortis. Curabitur lobortis, erat in pharetra euismod, odio ex mattis metus, hendrerit ornare libero nisi ac odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras a dolor eros. Nunc at condimentum metus. Etiam ac pulvinar libero. Ut in odio at mi egestas convallis. Quisque eu augue id dolor malesuada aliquet. Nam condimentum luctus metus sed sodales. Nulla quis velit quam. Mauris non leo a lorem eleifend aliquam. Aliquam vitae massa sed neque tristique semper non at turpis. Integer efficitur eget massa in varius. Aliquam pretium viverra ante in euismod. Aenean vestibulum pretium lectus, eget rhoncus tortor varius eget. Fusce at semper justo, vel vehicula urna. Pellentesque tristique porta felis et vulputate. Phasellus porta luctus eros, at aliquet elit condimentum non. Ut aliquet ligula ac metus aliquet, nec gravida justo iaculis. Mauris nisl nunc, lobortis id sagittis quis, ornare in lectus.</textarea>
+                </article>
+                <article>
+                    <header>
+                        <h5>약관 3 동의</h5>
+                        <label class="radio"><input type="radio" name="agree3"><i></i><span>동의함</span></label>
+                        <label class="radio"><input type="radio" name="agree3" checked><i></i><span>동의하지 않음</span></label>
+                    </header>
+                    <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tortor vehicula, pharetra ligula aliquam, molestie neque. Sed turpis tellus, maximus eu diam vitae, pellentesque mattis erat. Nullam sed massa et ipsum volutpat malesuada. Maecenas a facilisis erat, quis consequat purus. Aliquam rhoncus eros eu metus tincidunt lobortis. Curabitur lobortis, erat in pharetra euismod, odio ex mattis metus, hendrerit ornare libero nisi ac odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras a dolor eros. Nunc at condimentum metus. Etiam ac pulvinar libero. Ut in odio at mi egestas convallis. Quisque eu augue id dolor malesuada aliquet. Nam condimentum luctus metus sed sodales. Nulla quis velit quam. Mauris non leo a lorem eleifend aliquam. Aliquam vitae massa sed neque tristique semper non at turpis. Integer efficitur eget massa in varius. Aliquam pretium viverra ante in euismod. Aenean vestibulum pretium lectus, eget rhoncus tortor varius eget. Fusce at semper justo, vel vehicula urna. Pellentesque tristique porta felis et vulputate. Phasellus porta luctus eros, at aliquet elit condimentum non. Ut aliquet ligula ac metus aliquet, nec gravida justo iaculis. Mauris nisl nunc, lobortis id sagittis quis, ornare in lectus.</textarea>
+                </article>
+                <article>
+                    <header>
+                        <h5>약관 4 동의</h5>
+                        <label class="radio"><input type="radio" name="agree4"><i></i><span>동의함</span></label>
+                        <label class="radio"><input type="radio" name="agree4" checked><i></i><span>동의하지 않음</span></label>
+                    </header>
+                    <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tortor vehicula, pharetra ligula aliquam, molestie neque. Sed turpis tellus, maximus eu diam vitae, pellentesque mattis erat. Nullam sed massa et ipsum volutpat malesuada. Maecenas a facilisis erat, quis consequat purus. Aliquam rhoncus eros eu metus tincidunt lobortis. Curabitur lobortis, erat in pharetra euismod, odio ex mattis metus, hendrerit ornare libero nisi ac odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras a dolor eros. Nunc at condimentum metus. Etiam ac pulvinar libero. Ut in odio at mi egestas convallis. Quisque eu augue id dolor malesuada aliquet. Nam condimentum luctus metus sed sodales. Nulla quis velit quam. Mauris non leo a lorem eleifend aliquam. Aliquam vitae massa sed neque tristique semper non at turpis. Integer efficitur eget massa in varius. Aliquam pretium viverra ante in euismod. Aenean vestibulum pretium lectus, eget rhoncus tortor varius eget. Fusce at semper justo, vel vehicula urna. Pellentesque tristique porta felis et vulputate. Phasellus porta luctus eros, at aliquet elit condimentum non. Ut aliquet ligula ac metus aliquet, nec gravida justo iaculis. Mauris nisl nunc, lobortis id sagittis quis, ornare in lectus.</textarea>
+                </article>
+            </section>
+            <footer class="action step center">
+                <button type="button">취소</button>
+                <strong><button type="button">결제하기</button></strong>
+            </footer>
+        </main>
+    </div>
+    <div class="dimm">
+        <section class="popup alert withInfo">
+            <article>
+                <p class="desc">abc@domain.co.kr (홍길동) 님의 시험이 접수 되었습니다.</p>
+                <ul class="info">
+                    <li>기업은행 000-0000-0000</li>
+                    <li>(예금주 : (주) 휴텍씨)</li>
+                    <li>금액 : 50,000 원</li>
+                </ul>
+                <p class="desc">송금자명은 회원님의 ID(또는 성명)을 적어주세요.</p>
+            </article>
+            <footer>
+                <button type="button">확인</button>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
